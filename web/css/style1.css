@@ -1,0 +1,254 @@
+#management .form-control{
+    display : inherit;
+        width: 90%;
+    }
+#page-register .col-lg-1{
+    padding: 0;
+}
+
+.p-h{
+    float: right;
+    font-size: 22px
+}
+.p-t{
+    float: left;
+    font-size: 22px
+}
+.p-k{
+     font-size: 24px;
+    margin-bottom: 20px;
+
+}
+.p-s{
+    font-size: 22px
+}
+
+
+#page-register .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, 
+.col-lg-10, .col-lg-11, .col-lg-12{
+    padding-left: 0;;
+}
+#page-register .form-control{
+    
+}
+.text-radio{
+    margin-top: 5px !important;
+}
+#page-register .text-p-register{
+    margin-top: 6px;
+}
+.font_tetel{ 
+    margin-left: 100px;
+}
+.text-s{
+    width: 50%;
+}
+.form-profile{
+    margin-top: 5px;
+}
+.text-p-h{
+    text-align: center;
+    font-size: 26px;
+}
+.btn-ok{
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+}
+.text-h{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text-d{
+    width: 100%;
+    height: 35px;
+}
+.text-f{
+    margin-left: 50px;
+    font-size: 18px;
+}
+.form_top15{
+    margin-top: 5px;
+}
+.form_top10{
+    margin-top: 10px;
+}
+.form_top15{
+    margin-top: 15px;
+}
+.form_top20{
+    margin-top: 20px;
+}
+.font_16{
+    font-size: 16px;
+}
+.font_18{
+    font-size: 18px;
+}
+.font_20{
+    font-size: 20px;
+}
+.font_22{
+    font-size: 22px;
+}
+.font_24{
+    font-size: 24px;
+}
+.font_26{
+    font-size: 26px;
+}
+.font_28{
+    font-size: 28px;
+}
+.font_30{
+    font-size: 30px;
+}
+.color_green{
+    color: green;
+}
+.color_greenyellow{
+    color: greenyellow;
+}
+.color_red{
+    color: red;
+}
+#center-1{
+    text-align: center;
+    margin-top: 50px;
+}
+.form-lg{
+    padding: 5px 0px; 
+
+}
+#transaction .col-lg-12{
+    padding: 5px 0px;   
+}
+#transaction{
+    font-size: 16px;
+
+}
+.btn-th{
+    width: 100px !important;
+    margin-left: 10px;
+    margin-top: 7%;
+}
+.btn-lgi{
+    width: 100px !important;   
+}
+.text-lg{
+    margin-top: 7px;
+}
+.tex-h2{
+    width: 40px; 
+}
+.font-th{
+    font-size: 20px;
+}
+.textarea-h{
+    height: 85px;
+    width: 199px;
+}
+.date{
+    width: 200px;
+}
+#center-2{
+    text-align: center;
+    margin-top: -20px;
+}
+.hed-1{
+    display: -webkit-box;
+}
+.hed-h{
+    margin-top: 10px
+}
+#page-2 .tex-h{
+    width: 144px;
+}
+#ab{
+    cursor:pointer;
+    color:#a2a2a2;
+    opacity: 0.5;
+    font-size: 20px;
+    text-decoration:none;
+    margin-right: 40px;
+}
+#ab:hover {
+    opacity:1;
+    color:#0aa9b8;  
+    text-decoration:none;
+    margin-right: 40px ;
+}
+#abc{
+    color:#0aa9b8; 
+    margin-right: 40px;
+    font-size: 20px;
+    text-decoration:none;
+    margin-top: 0px;
+}
+hr.sohr {
+    border: 0;
+        width: 100%;
+    float: left;
+    height: 2px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #fff,#0aa9b8, #0aa9b8,#0aa9b8, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #0aa9b8,#0aa9b8,#0aa9b8, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #0aa9b8,#0aa9b8,#0aa9b8,  #fff);
+    background-image: -o-linear-gradient(left, #fff, #0aa9b8,#0aa9b8,#0aa9b8, #fff);
+    
+}
+hr.sohr-1 {
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #fff,#0aa9b8, #fff, #0aa9b8,#0aa9b8,#0aa9b8, #fff,#0aa9b8,#fff);
+    background-image: -moz-linear-gradient(left, #fff,#0aa9b8, #fff, #0aa9b8,#0aa9b8,#0aa9b8, #fff,#0aa9b8,#fff);
+    background-image: -ms-linear-gradient(left, #fff,#0aa9b8, #fff, #0aa9b8,#0aa9b8,#0aa9b8, #fff,#0aa9b8,#fff);
+    background-image: -o-linear-gradient(left, #fff,#0aa9b8, #fff, #0aa9b8,#0aa9b8,#0aa9b8, #fff,#0aa9b8,#fff);
+}
+hr.sohr-2 {
+    border: 0;
+    height: 2px;
+    width: 25%;
+    background: #333;
+    background-image: -webkit-linear-gradient(left , #0aa9b8,#0aa9b8,#0aa9b8);
+    background-image: -moz-linear-gradient(left, #0aa9b8,#0aa9b8,#0aa9b8);
+    background-image: -ms-linear-gradient(left, #0aa9b8,#0aa9b8,#0aa9b8);
+    background-image: -o-linear-gradient(left ,#0aa9b8,#0aa9b8,#0aa9b8);
+}
+.text-hr{   
+    margin-top: 10px
+}
+#font-h{
+    font-size: 20px;    
+}
+#font-18{
+    font-size: 18px;   
+    margin-top: 10px;
+    float: right;
+}
+#font-1-18{
+    font-size: 18px;    
+}
+
+#div-1{
+    width: 250px;   
+    height: auto;
+    margin-top: 10px;
+}
+#footter{
+    width: 100%;
+    height: 150px;
+    background-color: #5bc0de;
+    margin-top: 20px; 
+}
+#herder{
+    width: 100%;
+    height: 150px;
+    background-color:#5bc0de;
+}
+#bckbody{
+    background-color: #eeeeee;
+
+}
