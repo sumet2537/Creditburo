@@ -13,11 +13,12 @@ import java.sql.SQLException;
  *
  * @author Donut
  */
-public class Connextion {
-    public Connection openNewConnection() throws Exception {
+public class DBConnect {
+
+      public Connection openNewConnection() throws Exception {
         Connection conn = null;
         Class.forName("com.mysql.jdbc.Driver");
-        String jdbc = "jdbc:mysql://localhost/db_buro?user=root&password=chakknrt111";
+        String jdbc = "jdbc:mysql://127.0.0.1:8889/creditburo?user=root&password=root";
         String jdbcutf8 = "&useUnicode=true&characterEncoding=UTF-8";
         conn = DriverManager.getConnection(jdbc+jdbcutf8);
         
@@ -36,7 +37,7 @@ public class Connextion {
     }
 
     public static void main(String args[]) {
-        Connextion dbConnect = new Connextion();
+        DBConnect dbConnect = new DBConnect();
         try {
             System.out.println("#: mySQL connection opened :=  " + dbConnect.openNewConnection());
         } catch (Exception ex) {

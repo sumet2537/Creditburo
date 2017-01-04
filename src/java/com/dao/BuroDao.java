@@ -6,7 +6,7 @@
 package com.dao;
 
 import com.bean.BuroBean;
-import com.util.Connextion;
+import com.util.DBConnect;
 import java.awt.BorderLayout;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,8 +20,9 @@ import java.util.ArrayList;
 public class BuroDao {
     
     public void updateStatus(BuroBean bean) throws Exception {
-        Connextion dbConnect = new Connextion();
-        Connection con = dbConnect.openNewConnection();
+             DBConnect dbConnect = new DBConnect();
+        Connection con = null;
+        con = dbConnect.openNewConnection();
         String sql = "update tbl_backlist  set br_Status=? where br_code=?";
 
         PreparedStatement p = null;
@@ -44,7 +45,7 @@ public class BuroDao {
     }
 
     public void insert(BuroBean buro) throws Exception {
-        Connextion dbConnect = new Connextion();
+       DBConnect dbConnect = new DBConnect();
         Connection con = null;
         con = dbConnect.openNewConnection();
         String sql = "insert into tbl_backlist values(?,?,?,?,?,?,?,?)";
@@ -78,8 +79,9 @@ public class BuroDao {
     public BuroBean selectCode(String Code) throws Exception {
         BuroBean bean = null;
         ResultSet rs = null;
-       Connextion dbConnect = new Connextion();
-        Connection con = dbConnect.openNewConnection();
+        DBConnect dbConnect = new DBConnect();
+        Connection con = null;
+        con = dbConnect.openNewConnection();
         String sql = "select * from  tbl_backlist  where  br_Code = ? ";
         PreparedStatement p = null;
         try {
@@ -115,8 +117,9 @@ public class BuroDao {
      public Boolean selectCodeBo(String Code) throws Exception {
         BuroBean bean = null;
         ResultSet rs = null;
-       Connextion dbConnect = new Connextion();
-        Connection con = dbConnect.openNewConnection();
+      DBConnect dbConnect = new DBConnect();
+        Connection con = null;
+        con = dbConnect.openNewConnection();
         String sql = "select * from  tbl_backlist  where  br_Code = ? ";
         PreparedStatement p = null;
         try {
@@ -146,8 +149,9 @@ public class BuroDao {
     public ArrayList<BuroBean> selectaccount(String account) throws Exception {
         BuroBean bean = null;
         ResultSet rs = null;
-        Connextion dbConnect = new Connextion();
-        Connection con = dbConnect.openNewConnection();
+    DBConnect dbConnect = new DBConnect();
+        Connection con = null;
+        con = dbConnect.openNewConnection();
         String sql = "select * from  tbl_backlist  where  br_Account = ? ";
         PreparedStatement p = null;
         ArrayList<BuroBean> list = new ArrayList<BuroBean>();
@@ -194,8 +198,9 @@ public class BuroDao {
     public ArrayList<BuroBean> selectStatus(String Status) throws Exception {
         BuroBean bean = null;
         ResultSet rs = null;
-         Connextion dbConnect = new Connextion();
-        Connection con = dbConnect.openNewConnection();
+          DBConnect dbConnect = new DBConnect();
+        Connection con = null;
+        con = dbConnect.openNewConnection();
         String sql = "select * from  tbl_backlist where br_Status=?";
         PreparedStatement p = null;
         ArrayList<BuroBean> list = new ArrayList<BuroBean>();
@@ -230,8 +235,9 @@ public class BuroDao {
         public ArrayList<BuroBean> selectAll() throws Exception {
         BuroBean bean = null;
         ResultSet rs = null;
-         Connextion dbConnect = new Connextion();
-        Connection con = dbConnect.openNewConnection();
+         DBConnect dbConnect = new DBConnect();
+        Connection con = null;
+        con = dbConnect.openNewConnection();
         String sql = "select * from  tbl_backlist ";
         PreparedStatement p = null;
         ArrayList<BuroBean> list = new ArrayList<BuroBean>();
@@ -270,8 +276,9 @@ rs = p.executeQuery();
         public ArrayList<BuroBean> selectlike (String data) throws Exception {
         BuroBean bean = null;
         ResultSet rs = null;
-         Connextion dbConnect = new Connextion();
-        Connection con = dbConnect.openNewConnection();
+         DBConnect dbConnect = new DBConnect();
+        Connection con = null;
+        con = dbConnect.openNewConnection();
         String sql = "select * from tbl_backlist where br_Code like'%" + data + "%' or br_Account like'%" + data + "%' or br_Bank like'%" + data + "%' "
                 + "or br_Name like'%" + data + "%' or br_Lastname like'%" + data + "%' " ;
         PreparedStatement p = null;

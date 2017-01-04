@@ -21,7 +21,7 @@ public class Checkbacklist {
            
                 
             
-          burobean =  buroDao.selectCode(code);
+          burobean =  buroDao.selectCode(code); ///
           if(burobean.getStatus().equals("1")){
             status = "1";
           }else{
@@ -30,9 +30,6 @@ public class Checkbacklist {
         } catch (Exception e) {
            
         }
-        
-        
-        
     return status;
     }
 }
